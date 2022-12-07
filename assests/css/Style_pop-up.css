@@ -1,0 +1,193 @@
+/* The first section ends here */
+/* The second section pop up night heading starts here */t
+.none{
+    
+}
+
+
+.line-h-53 {
+    line-height: 53px;
+}
+
+.font-s-40 {
+    font-size: 40px;
+}
+
+/* Third section contains the flex image and text */
+
+
+.display-n-s {
+    display: none;
+}
+
+.flex-image {
+    margin-top: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-img {
+    width: 50%;
+}
+
+.flex-img img {
+    width: 100%;
+    min-height: 600px;
+    object-fit: cover;
+}
+
+.third-s-text {
+    width: 50%;
+    padding-right: 10.5%;
+}
+
+.third-s-text h2 {
+    width: 60%;
+}
+
+.btn {
+    margin-top: 29px;
+    background-color: #E85F5C;
+    width: 41.7%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #7692FF;
+    background: #7692FF;
+
+}
+
+.third-s-text a {
+    text-decoration: none;
+}
+
+.third-s-text {
+    margin-bottom: 6%;
+}
+
+/* third section ends here */
+/* The below code is applicable for fonts */
+.top-margin {
+    margin-top: 18px;
+}
+
+.head-margin {
+    margin-top: 31px;
+}
+
+.event-text {
+    padding: 6.8% 0;
+}
+
+.relation-text {
+    margin-top: 3.4%;
+}
+.feel-text {
+    margin-top: 4.4%;
+}
+/* The font style end here  */
+/*     <!-- fourth section starts here conatains grid imgies starts here -->*/
+.image-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6.7%;
+    row-gap: 9.2%;
+}
+
+.image-grid img {
+    width: 100%;
+}
+
+/* <!-- fourth section starts here conatains grid imgies ends here  -->  */
+/* fifth section contains info about life starts here */
+.life-info {
+    margin-top: 9.4rem;
+    display: grid;
+    column-gap: 115px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.spice-up-h {
+    margin-top: 19px;
+}
+
+.try-new-h {
+    margin-top: 38px;
+}
+
+/* fifth section contains info about life ends here */
+
+
+
+.margin-set {
+    margin-top: 81px;
+    margin: auto 20px;
+}
+
+
+
+.event-text a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* The footer ends here */
+
+
+/* media query for 768 starts here */
+@media screen and (max-width:768px) {
+
+    .flex-image {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .margin-t-40px {
+        margin: 40px 0 20px 0;
+    }
+
+    .display-n-s {
+        display: contents;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block !important;
+        margin-right: 0px;
+    }
+
+    .third-s-text h2 {
+        display: none;
+    }
+
+    .flex-img {
+        width: 100%;
+    }
+
+    .third-s-text {
+        width: 100%;
+        padding-right: 0%;
+    }
+
+    .flex-img img {
+        width: 100%;
+        min-height: 0px;
+        object-fit: cover;
+    }
+}
+

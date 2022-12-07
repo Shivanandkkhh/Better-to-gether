@@ -1,0 +1,112 @@
+.contact {
+    text-align: center;
+    padding: 48px 48px 48px 0;
+}
+
+.nav-section {
+    margin: 19px 0 35px 0;
+}
+
+.info-cont {
+    margin-top: 84px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.reach-us-heading,
+.help-section {
+    grid-column: 1/3;
+}
+
+.contact-info,
+.cont-info {
+    grid-column: 3;
+}
+
+.contact-info {
+    margin-top: 49px;
+}
+
+.help-section {
+    margin-top: 45px;
+}
+
+.cont-info {
+    margin-top: 62px;
+}
+
+input {
+    border-width: 0 0 0px 0px;
+    width: 100%;
+    background-color: #F6F8F3;
+}
+
+.border-btm {
+    border-bottom: 1px solid #8E8E8E;
+    width: 300%;
+    margin-bottom: 35px;
+}
+
+label {
+    margin-top: 41px;
+}
+.border-margin{
+    padding-top: 65px;
+}
+
+.submit {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 127px;
+    height: 50px;
+}
+
+.submit a {
+    text-decoration: none;
+}
+.contact-info a{
+    color: #7692FF;
+}
+.underlines{
+    color: #ffff;
+}
+.underlines:hover{
+    color: rgb(25, 226, 25);
+}
+/*  regoster section ends here  */
+ 
+/*  */
+.cont-info button{
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+}
+/*  */
+/* Media screen @980px starts here */
+
+/* Media screen @980px ends here */
+/* Media screen @768px starts here */
+@media screen and (max-width:768px) {
+    .reach-us-heading,
+    .help-section,
+    .contact-info,
+    .cont-info {
+        grid-column: 1/5;
+    }
+.border-btm {
+    width: 125%;
+}
+.cont-info button{
+   width: 125%;
+}
+    
+}
+
+/* Media screen @768px starts here */
+/* Media screen @520px starts here */
+
+
+
+/* Media screen @520px starts here */
