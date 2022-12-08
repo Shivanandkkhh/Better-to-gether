@@ -262,7 +262,7 @@ table {
 }
 
 .nav-section {
-    margin: 19px 0 35px 0;
+    margin: 16px 0 13px 0;
     position: sticky;
     top: 0px;
     z-index:0;    
@@ -438,7 +438,7 @@ table {
 .footer {
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr 1fr;
-    margin: 99px 0 80px 0;
+    margin: 99px 0 26px 0;
   
 }
 
@@ -508,6 +508,11 @@ table {
     justify-content: space-between;
 }
 /* The footer ends here */
+/*  */
+.logos a{
+    text-decoration: none;
+}
+/*  */
 @media screen and (max-width:980px) {
     .adj-text {
         display: none;
@@ -601,7 +606,7 @@ table {
 
     .footer-sub2,
     .footer-sub4 {
-        grid-column: 3/5;
+        grid-column: 2/5;
     }
 }
 
