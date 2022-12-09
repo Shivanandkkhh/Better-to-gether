@@ -1,4 +1,4 @@
-.phone-text{
+.phone-text {
     margin-top: 0px;
 }
 
@@ -16,17 +16,22 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.reach-us,.stay-touch{
+
+.reach-us,
+.stay-touch {
     margin-top: 6px;
 }
+
 .reach-us-heading,
 .help-section {
     grid-column: 1/3;
+
 }
 
 .contact-info,
 .cont-info {
     grid-column: 3;
+    padding: 0 0 0 40px;
 }
 
 .contact-info {
@@ -47,16 +52,12 @@ input {
     background-color: #F6F8F3;
 }
 
-.border-btm {
-    border-bottom: 1px solid #8E8E8E;
-    width: 300%;
-    margin-bottom: 35px;
-}
 
 label {
     margin-top: 41px;
 }
-.border-margin{
+
+.border-margin {
     padding-top: 65px;
 }
 
@@ -72,84 +73,221 @@ label {
 .submit a {
     text-decoration: none;
 }
-.contact-info a{
+
+.contact-info a {
     color: #7692FF;
     text-decoration: none;
 }
-.underlines{
+.contact-info a:hover{
+    text-decoration: underline;
+}
+.font-w-800 a{
+    text-decoration: none;
+}
+.underlines {
     color: #ffff;
+    border-bottom: 2px solid #ffff;
 }
 .underlines:hover{
-    color: rgb(25, 226, 25);
+    border-bottom: none;
 }
-.marg-top{
+
+
+
+
+.marg-top {
     min-height: 200px !important;
 
 }
-.side-margin{
- margin: 0 20px;
+
+.side-margin {
+    margin: 0 20px;
 }
+
 /*  regoster section ends here  */
- 
+
 /*  */
-.cont-info button{
+
+
+/*  */
+
+/* form section */
+.form1 input {
+    outline: none;
+    border: none;
+}
+
+.txt-box1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+.user-box {
+    position: relative;
+}
+
+.user-box input {
+    width: 330%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 41px;
+    border: none;
+    border-bottom: 1px solid #8E8E8E;
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: 'Hind';
+    font-weight: 500;
+    color: #000000;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+}
+
+.user-box textarea:focus~label,
+.user-box textarea:valid~label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+}
+
+form button:hover {
+    background: #7692FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.msg-area {
+    padding-bottom: 70px !important;
+}
+
+.user-box label {
+    font-family: 'Hind';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.msg-area {
+    border: none;
+    outline: none;
+    width: 330%;
+    background: #F6F8F3;
+    padding-bottom: 77px;
+    border: none;
+    border-bottom: 1px solid #8E8E8E;
+}
+
+.cont-info button {
+    margin-top: 50px;
     outline: none;
     border: 0;
     border-radius: 5px;
 }
+
+form button {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    background: #E85F5C;
+    border: none;
+    width: 126px;
+    height: 50px;
+    margin-top: 13px;
+}
+
 /*  */
+
 /* Media screen @980px starts here */
 
 /* Media screen @980px ends here */
 /* Media screen @768px starts here */
 @media screen and (max-width:768px) {
+
     .reach-us-heading,
     .help-section,
     .contact-info,
     .cont-info {
         grid-column: 1/5;
     }
-.border-btm {
-    width: 125%;
-}
-.cont-info button{
-   width: 125%;
-}
-    
+
+    .contact-info,
+    .cont-info {
+       
+        padding: 0 0 0 0px;
+    }
+
+    .user-box input {
+        width: 125% !important;
+    }
+
+    .msg-area {
+        width: 125% !important;
+    }
+
+
+    .cont-info button {
+        width: 125%;
+    }
+
 }
 
 /* Media screen @768px starts here */
 /* Media screen @520px starts here */
 @media screen and (max-width:520px) {
-.info-cont {
-    margin-top: 40px;
-}
-.font-s-40px{
-    font-size: 30px !important;
-}
-.event-text {
-    padding: 5.6% 0 !important;
+    .info-cont {
+        margin-top: 40px;
+    }
 
-}
-.contact-info{
-    margin-top: 20px;
-    line-height: 2;
-}
-.help-section {
-    margin-top: 36px;
-}
-.cont-info {
-    margin-top: 26px;
-}
-.feel-text {
-    line-height: 0px !important;
-}
-.submit {
-    margin-top: 30px;
-}
-.marg-top{
-    min-height: 213px !important;
+    .font-s-40px {
+        font-size: 30px !important;
+    }
 
+    .event-text {
+        padding: 5.6% 0 !important;
+
+    }
+
+    .contact-info {
+        margin-top: 20px;
+        line-height: 2;
+    }
+
+    .help-section {
+        margin-top: 36px;
+    }
+
+    .cont-info {
+        margin-top: 26px;
+    }
+
+    .feel-text {
+        line-height: 0px !important;
+    }
+
+    .submit {
+        margin-top: 30px;
+    }
+
+    .marg-top {
+        min-height: 213px !important;
+
+    }
 }
-}
+
 /* Media screen @520px starts here */

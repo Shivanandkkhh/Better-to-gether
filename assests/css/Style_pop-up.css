@@ -50,6 +50,7 @@
 .btn {
     margin-top: 29px;
     background-color: #E85F5C;
+    border: 1px solid #E85F5C;
     width: 41.7%;
     height: 50px;
     display: flex;

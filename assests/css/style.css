@@ -260,14 +260,12 @@
     text-decoration: none;
     color:#F5F8F3;
 }
-.underline a:hover{
-    color: blue;
-}
+
 .underline {
     border-bottom: 2px solid #ffff;
 }
- .underline a:hover{
-    border-bottom: 2px solid #7692FF;
+ .underline:hover{
+    border-bottom: none;
 } 
 .we-txt {
     color: #F5F8F3;
