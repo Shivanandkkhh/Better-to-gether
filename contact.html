@@ -357,8 +357,9 @@
                             <input type="number" name="txt" maxlength="10" required="" />
                             <label>Phone Number</label>
                         </div>
-                        <div class="user-box ">
-                            <input type="number" name="txt" value="" required="" />
+                        <div class="user-box">
+                            <input type="text" name="txt" value="" onfocus="(this.type='date')"
+                                onblur="(this.type='text')" required="" />
                             <label>Anniversary Date</label>
                         </div>
                         <div class="user-box ">
@@ -366,7 +367,7 @@
                             <label>Message</label>
                         </div>
                         <div class="send-btn ">
-                            <button type="submit" value="submit">Send</button>
+                            <button onclick="myFunction()" type="submit" value="submit">Send</button>
                         </div>
                     </form>
                 </div>
@@ -538,4 +539,7 @@
     </section>
     <!-- the privacy policy inforamtion stats here -->
     </section>
+    <script src="./assests/JavaScript/javascript.js"></script>
 </body>
+
+</html>

@@ -111,7 +111,7 @@ label {
 
 /*  */
 
-/* form section */
+/* form section starts here */
 .form1 input {
     outline: none;
     border: none;
@@ -137,6 +137,10 @@ label {
     outline: none;
     background: transparent;
 }
+/* .form-date{
+    onfocus="(this.type='date')"  onblur="(this.type='text')"
+} 
+*/
 
 .user-box label {
     position: absolute;
