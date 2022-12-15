@@ -153,6 +153,10 @@ table {
     color: #ffff;
 }
 
+.contact {
+    text-align: center;
+    padding: 48px 48px 48px 0;
+}
 .container {
     max-width: 1236px;
     width: 100%;
@@ -348,7 +352,9 @@ table {
 .font-s-14 {
     font-size: 14px !important;
 }
-
+.font-s-12{
+    font-size: 12px;
+}
 .line-h-18 {
     line-height: 18px;
 }
@@ -424,7 +430,17 @@ table {
 }
 
 
+.image-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6.7%;
+    row-gap: 9.2%;
+}
 
+.image-grid img {
+    width: 100%;
+}
 /*  */
 
 .margin-sets {
@@ -582,7 +598,17 @@ form .footer-form {
     color: #000000;
 
 }
-
+.we-heading {
+    width: 100%;
+    background: #E85F5C;
+    height: 12.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
 /*  */
 @media screen and (max-width:980px) {
     .adj-text {

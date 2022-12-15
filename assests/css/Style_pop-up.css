@@ -95,17 +95,7 @@
 }
 /* The font style end here  */
 /*     <!-- fourth section starts here conatains grid imgies starts here -->*/
-.image-grid {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 6.7%;
-    row-gap: 9.2%;
-}
 
-.image-grid img {
-    width: 100%;
-}
 
 /* <!-- fourth section starts here conatains grid imgies ends here  -->  */
 /* fifth section contains info about life starts here */
