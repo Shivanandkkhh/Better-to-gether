@@ -1,70 +1,104 @@
 /* This code is for maing background white */
-.back-white {
-    background-color: #ffffff;
+body {
+    background-color: #fff !important;
 }
-.color-white{
+
+.bg-color-blue,
+.bg-color-blue-white {
+    background-color: #F6F8F3;
+}
+
+.bg-color-blues {
+    padding: 47px 0;
+    background-color: #F6F8F3;
+}
+
+.color-white {
     background-color: #E85F5C;
 }
 
 /* This code is for maing background white ends here*/
 /* The below section is for filter and sorting options */
-.count-down-div{
-    background-color: #fff;
-    border-bottom: 1px solid #8E8E8E;
-    padding:11px;
-    text-align: center;
+.reach-us {
+    margin-top: 7.2%;
 }
-.BgWhite{
+
+.BgWhite {
     margin: 20px 0;
 }
-.flex-container{
+
+.flex-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#checkboxes{
+
+#checkboxes {
     display: none;
     position: absolute;
     border: 1px solid #8E8E8E;
-}
-#checkboxes label{
-    display: block;
     background: #FFFFFF;
+    width: 31%;
+}
+
+#checkboxes label {
+    display: block;
     padding: 10px 0px 13px 5px;
     font-size: 14px;
     font-weight: 500;
-    width: 23rem;
 }
+
 .select-option {
     display: flex;
 }
 
-.select-option select{
-    background-color: #FFFFFF;
+.select-option select {
     border: none;
     outline: none;
     border-bottom: 1px solid #8E8E8E;
     padding-left: 14px;
+    background: #fff;
 }
-.select-2{
+
+.select-2 {
     display: none;
 }
-.select-option p{
+
+.select-option p {
     font-weight: 600;
     font-size: 12px;
     margin-right: 8px;
 }
-.filter{
+
+.filter {
     background: #7692FF;
     height: 41px;
     width: 181px;
     border: none;
     color: #FFFFFF;
     font-size: 14px;
+    position: relative;
 }
-.filter-div svg{
+
+.filter-div svg {
     display: none;
+
 }
+
+.count-down-div {
+    width: 93%;
+    border-bottom: 1px solid #8E8E8E;
+    padding: 11px;
+    text-align: center;
+}
+
+#checkboxes span {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 /* The above section is for filter and sorting options */
 /* The below code is for making imagies responsive through grid */
 .event-image-grid {
@@ -72,11 +106,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3.36%;
     row-gap: 7.7%;
-    margin-bottom: 15.2%;
-    /* background-color: #fff !important; */
-}
-.event-back-white{
-    background-color: #fff !important;
+    margin-bottom: 11.8%;
 }
 
 .event-image-grid img {
@@ -86,6 +116,7 @@
 .cmn-img {
     width: 100%;
 }
+
 .image-info {
     font-family: Mont;
     font-size: 14px;
@@ -106,27 +137,31 @@
     justify-content: center;
     font-weight: 600 !important;
 }
+
 .top-btm-m {
     margin-bottom: 14.1%;
 }
+
 /* The below code is for making imagies responsive through grid ends here */
 
-.bg-color-white{
-    background-color: #ffffff;
-}
 /* The below code contains the about us of event page */
 section h5 {
     padding-top: 4.1%;
 }
 
 .we-heading h3 {
-    padding: 0 0 0 20px;
+    padding: 0 20px;
     text-align: center;
 }
-.container-set{
+
+.container-set {
     max-width: 1196px;
     /* text-align: center; */
     margin: 0 auto;
+}
+
+.above-hr {
+    margin-top: 0 !important;
 }
 
 /* The below code contains the about us of event page */
@@ -148,12 +183,30 @@ media querry @980 ends from here */
 /* media querry @980 ends from here */
 /* media querry @980 starts from here */
 @media screen and (max-width:520px) {
-    .filter-div button{
-        display: none;
+    .nav-section {
+        background-color: #fff !important;
     }
-    .filter-div svg{
+
+    .select-2 {
         display: block;
     }
+
+    .select-1 {
+        display: none;
+    }
+
+    .select-2 select {
+        -webkit-appearance: none;
+    }
+
+    .filter-div button {
+        display: none;
+    }
+
+    .filter-div svg {
+        display: block;
+    }
+
     .margin-setting {
         margin: 0 1px !important;
     }
@@ -161,18 +214,27 @@ media querry @980 ends from here */
     .event-text {
         padding: 9% 0 !important;
     }
+
     .font-s-40px {
         font-size: 30px !important;
     }
-    .text-center{
+
+    .text-center {
         text-align: left !important;
         padding-left: 20px;
     }
-    .we-heading h3 {
-        padding: 0 10px 0 10px;
-        
+
+    .bg-color-blues {
+        background-color: #fff;
     }
-    
+
+    .we-heading h3 {
+        padding: 0 20px;
+    }
+
+    /* .bg-color-blue-white{
+        background-color: #fff !important;
+    } */
     .event-image-grid {
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 50%;

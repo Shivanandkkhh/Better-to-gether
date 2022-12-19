@@ -157,6 +157,7 @@ table {
     text-align: center;
     padding: 48px 48px 48px 0;
 }
+
 .container {
     max-width: 1236px;
     width: 100%;
@@ -281,7 +282,7 @@ table {
 }
 
 .nav-section {
-    margin: 16px 0 13px 0;
+    padding: 16px 0 13px 0;
     position: sticky;
     top: 0px;
     z-index: 0;
@@ -340,8 +341,11 @@ table {
 .subscribe {
     border: none;
     outline: none;
+    padding-bottom: 10px;
     background-color: #F5F8F3;
-    line-height: 40px;
+    border-bottom: 1px solid #000000;
+    margin-left: 28%;
+    /* line-height: 40px; */
     /* float: right; */
 }
 
@@ -352,9 +356,11 @@ table {
 .font-s-14 {
     font-size: 14px !important;
 }
-.font-s-12{
+
+.font-s-12 {
     font-size: 12px;
 }
+
 .line-h-18 {
     line-height: 18px;
 }
@@ -441,6 +447,7 @@ table {
 .image-grid img {
     width: 100%;
 }
+
 /*  */
 
 .margin-sets {
@@ -505,7 +512,7 @@ table {
 
 .footer {
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
     margin: 99px 0 26px 0;
 
 }
@@ -529,6 +536,12 @@ table {
 .flex-footer {
     display: flex;
 }
+.flex-footer form{
+    margin-right: 0px !important;
+}
+.flex-footer a {
+    margin-left: 2px;
+}
 
 .m1-top {
     margin: 10px 0 20px 0;
@@ -547,7 +560,7 @@ table {
     margin: 20px 0;
 }
 
-.line {
+.flex-footer .line {
     text-align: left;
     width: 60%;
 }
@@ -585,7 +598,6 @@ form .footer-form {
     border: none;
     background-color: #F5F8F3;
     border-bottom: 1px solid #000000;
-    width: 90%;
     /* text-decoration: underline; */
 }
 
@@ -598,6 +610,7 @@ form .footer-form {
     color: #000000;
 
 }
+
 .we-heading {
     width: 100%;
     background: #E85F5C;
@@ -606,9 +619,11 @@ form .footer-form {
     justify-content: center;
     align-items: center;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
+
 /*  */
 @media screen and (max-width:980px) {
     .adj-text {
@@ -630,6 +645,10 @@ form .footer-form {
     .msg-area {
         width: 260%;
     }
+
+    .subscribe {
+        margin-left: 0;
+    }
 }
 
 /* media query for 980 ends here */
@@ -647,11 +666,12 @@ form .footer-form {
     .third-s-text h2 {
         width: 100%;
     }
+
     .footer-sub1,
     .footer-sub3,
     .footer-sub2,
-    .footer-sub4{
-        padding:0 30px 0 0;
+    .footer-sub4 {
+        padding: 0 30px 0 0;
     }
 }
 
@@ -756,9 +776,10 @@ form .footer-form {
     .footer-sub1,
     .footer-sub3,
     .footer-sub2,
-    .footer-sub4{
-        padding:0 2px 0 0;
+    .footer-sub4 {
+        padding: 0 2px 0 0;
     }
+
     .above-hr {
         margin-top: 12.5%;
     }
