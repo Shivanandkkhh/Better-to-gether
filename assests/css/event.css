@@ -1,25 +1,19 @@
+/* This code is for maing background white */
 .back-white {
     background-color: #ffffff;
-
+}
+.color-white{
+    background-color: #E85F5C;
 }
 
-.event-image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3.36%;
-    row-gap: 7.7%;
-    margin-bottom: 15.2%;
-}
-
-/* .apply-filter button {
-    background-color: #7692FF;
-    margin: 9px 0;
-    border: none;
-    width: 181px;
-    height: 41px;
-    color: #ffff;
-} */
+/* This code is for maing background white ends here*/
 /* The below section is for filter and sorting options */
+.count-down-div{
+    background-color: #fff;
+    border-bottom: 1px solid #8E8E8E;
+    padding:11px;
+    text-align: center;
+}
 .BgWhite{
     margin: 20px 0;
 }
@@ -44,6 +38,7 @@
 .select-option {
     display: flex;
 }
+
 .select-option select{
     background-color: #FFFFFF;
     border: none;
@@ -71,6 +66,18 @@
     display: none;
 }
 /* The above section is for filter and sorting options */
+/* The below code is for making imagies responsive through grid */
+.event-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.36%;
+    row-gap: 7.7%;
+    margin-bottom: 15.2%;
+    /* background-color: #fff !important; */
+}
+.event-back-white{
+    background-color: #fff !important;
+}
 
 .event-image-grid img {
     width: 100%;
@@ -79,19 +86,6 @@
 .cmn-img {
     width: 100%;
 }
-
-.bg-color-white{
-    background-color: #ffffff;
-}
-section h5 {
-    padding-top: 4.1%;
-}
-
-.we-heading h3 {
-    padding: 0 0 0 20px;
-    text-align: center;
-}
-
 .image-info {
     font-family: Mont;
     font-size: 14px;
@@ -112,25 +106,37 @@ section h5 {
     justify-content: center;
     font-weight: 600 !important;
 }
-
 .top-btm-m {
     margin-bottom: 14.1%;
 }
+/* The below code is for making imagies responsive through grid ends here */
 
+.bg-color-white{
+    background-color: #ffffff;
+}
+/* The below code contains the about us of event page */
+section h5 {
+    padding-top: 4.1%;
+}
 
+.we-heading h3 {
+    padding: 0 0 0 20px;
+    text-align: center;
+}
+.container-set{
+    max-width: 1196px;
+    /* text-align: center; */
+    margin: 0 auto;
+}
 
+/* The below code contains the about us of event page */
 
-
-/*  */
-
-/*  */
-
-/* media querry @980 starts from here */
+/* media querry @980 starts from here
 @media screen and (max-width:980px) {
     
 }
 
-/* media querry @980 ends from here */
+media querry @980 ends from here */
 
 /* media querry @980 starts from here */
 @media screen and (max-width:768px) {
@@ -152,12 +158,24 @@ section h5 {
         margin: 0 1px !important;
     }
 
+    .event-text {
+        padding: 9% 0 !important;
+    }
     .font-s-40px {
         font-size: 30px !important;
     }
-
+    .text-center{
+        text-align: left !important;
+        padding-left: 20px;
+    }
+    .we-heading h3 {
+        padding: 0 10px 0 10px;
+        
+    }
+    
     .event-image-grid {
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50%;
     }
 
     .top-btm-m {

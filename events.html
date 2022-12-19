@@ -312,10 +312,10 @@
     </div>
     <!-- The content starts from here -->
     <!-- Events heading starts here-->
-    <section class="back-c-pink ">
-        <div class="container">
+    <section class="back-c-containerpink ">
+        <div class="">
             <div class="margin-setting">
-                <h1 class="contact color-white font-w-800 line-h-53 font-s-40px">Better Together Events</h1>
+                <h1 class="contact back-c-pink color-white font-w-800 line-h-53 font-s-40px">Better Together Events</h1>
             </div>
         </div>
     </section>
@@ -327,47 +327,37 @@
                 <h5 class="reach-us event-text">Choose Your Experience</h4>
             </div>
         </div>
-        <!-- <div class="container apply-filter">
-            <div class="margin-set">
-            <button id="btnShow">Filters</button>
-            <div id="dvSites" style="display: none">
-                <form action="/action_page.php">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Newyork</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> California</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Florida</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Miami</label><br><br>
-
-                </form>
-            </div>
-        </div> -->
         <section class="BgWhite">
             <div class="container">
                 <div class="margin-set">
                     <div class="flex-container">
                         <div class="filter-div">
                             <form action="">
-                                <button class="filter" onclick="showList()">Filters</button>
-                                <svg onclick="showList()" width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" onclick="showCheckboxes()">
+                                <button class="filter" type="button" onclick="showList();">Filters</button>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" onclick="showList()">
                                     <path
                                         d="M8.11979 18.875V13.0156H9.68229V15.1771H18.875V16.7396H9.68229V18.875H8.11979ZM0.125 16.7396V15.1771H6.55729V16.7396H0.125ZM4.99479 12.4167V10.2812H0.125V8.71875H4.99479V6.53125H6.55729V12.4167H4.99479ZM8.11979 10.2812V8.71875H18.875V10.2812H8.11979ZM12.4427 5.98438V0.125H14.0052V2.26042H18.875V3.82292H14.0052V5.98438H12.4427ZM0.125 3.82292V2.26042H10.8802V3.82292H0.125Z"
                                         fill="black" />
                                 </svg>
-                                <div id="checkboxes">
-                                    <label for="one">
-                                        <input type="checkbox" id="one" />Newyork</label>
-                                    <label for="two">
-                                        <input type="checkbox" id="two" />California</label>
-                                    <label for="three">
-                                        <input type="checkbox" id="three" />Florida</label>
-                                    <label for="four">
-                                        <input type="checkbox" id="three" />Miami</label>
+
+                                <div id="checkboxes" onclick="checkedFunction()">
+
+                                    <div class="count-down-div">
+                                        <span class="check-number"></span><span class="count-down">City Selected</span>
+                                    </div>
+                                    <label for="one" class="item">
+                                        <input type="checkbox" id="one" onclick="newyorkImg"
+                                            class="check" />Newyork</label>
+                                    <label for="two" class="item">
+                                        <input type="checkbox" id="two" class="check" />California</label>
+                                    <label for="three" class="item">
+                                        <input type="checkbox" id="three" class="check" />Florida</label>
+                                    <label for="four" class="item">
+                                        <input type="checkbox" id="three" class="check" />Miami</label>
                                 </div>
                             </form>
+
                         </div>
                         <div class="select-option select-1">
                             <p>Sort by</p>
@@ -380,7 +370,7 @@
                                 <option value="">Price,high to low</option>
                             </select>
                         </div>
-                        <div class="select-option select-2">
+                        <!-- <div class="select-option select-2">
                             <select>
                                 <option value="">Sort by</option>
                                 <option value="">Featured</option>
@@ -390,7 +380,7 @@
                                 <option value="">Price,low to high</option>
                                 <option value="">Price,high to low</option>
                             </select>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -415,23 +405,22 @@
                         <h4 class="image-info">Balloon Ride: Grace Marriage Getaway</h4>
                         <p class="price image-info">$250.00</p>
                     </div>
+                   
+                        <div class="cooking cmn-img event-back-white">
+                            <img src="./assests/imagies/Event/Cooking.jpg" alt="Cooking">
+                            <h4 class="image-info">Cooking Together: Date Night</h4>
+                            <p class="price image-info">$25.00 $30.00</p>
 
-                    <div class="cooking cmn-img">
-                        <img src="./assests/imagies/Event/Cooking.jpg" alt="Cooking">
-                        <h4 class="image-info">Cooking Together: Date Night</h4>
-                        <p class="price image-info">$25.00 $30.00</p>
-
-                    </div>
-                    <div class="boat cmn-img"><img src="./assests/imagies/Event/Egale-boat.jpg" alt="Boat-surfing">
-                        <h4 class="image-info">Eagle Creek Kayaking: Grace Marraige Getaway</h4>
-                        <p class="price image-info">$100.00</p>
-                    </div>
-                    <div class="T-shirt-img cmn-img"><img src="./assests/imagies/Event/Santa-shirts.jpg"
-                            alt="Santa-T-shirts">
-                        <h4 class="image-info">Ugly Christmas Sweaters: Date Night</h4>
-                        <p class="price image-info  image-infomage-info">$50.00</p>
-                    </div>
-
+                        </div>
+                        <div class="boat cmn-img event-back-white"><img src="./assests/imagies/Event/Egale-boat.jpg" alt="Boat-surfing">
+                            <h4 class="image-info">Eagle Creek Kayaking: Grace Marraige Getaway</h4>
+                            <p class="price image-info">$100.00</p>
+                        </div>
+                        <div class="T-shirt-img cmn-img event-back-white"><img src="./assests/imagies/Event/Santa-shirts.jpg"
+                                alt="Santa-T-shirts">
+                            <h4 class="image-info">Ugly Christmas Sweaters: Date Night</h4>
+                            <p class="price image-info  image-infomage-info">$50.00</p>
+                        </div>
                 </div>
             </div>
         </div>
@@ -440,7 +429,7 @@
 
     <!-- imagies grid ends here -->
     <!-- Explore today heading starts here-->
-    <section class="container">
+    <section class="container-set">
         <div class="we-heading">
             <h3 class="event-text we-txt color-white">Learn why we do what we do, read more
                 <span class="underline cur-point"><a href="./contact.html"> about us.</a> </span>
@@ -512,7 +501,6 @@
                                     d="M204.59 4.16579V3.32445L204.179 4.02214H203.974L203.564 3.34497V4.16579H203.153V2.56519H203.523L204.077 3.48861L204.631 2.56519H205V4.16579H204.59Z"
                                     fill="#E85F5C" />
                             </svg>
-
                         </div>
                         <div class="m1-top">
                             <p class="footer-text font-f-hind font-s-16"> <a href="callto::(317)846-2884">(317)
@@ -587,7 +575,7 @@
                 </div>
             </footer>
 
-            <!-- the footer ends here -->
+            <!-- the footer ends from here -->
         </div>
         </div>
     </section>
