@@ -163,7 +163,9 @@ section h5 {
 .above-hr {
     margin-top: 0 !important;
 }
-
+.subscribe{
+    padding-bottom: 10px;
+}
 /* The below code contains the about us of event page */
 
 /* media querry @980 starts from here

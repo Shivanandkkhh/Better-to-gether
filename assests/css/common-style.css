@@ -341,7 +341,7 @@ table {
 .subscribe {
     border: none;
     outline: none;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     background-color: #F5F8F3;
     border-bottom: 1px solid #000000;
     margin-left: 28%;
@@ -387,6 +387,11 @@ table {
 .subscribe,
 .font-w-800 {
     font-weight: 800;
+}
+
+.font-s-24 {
+    font-size: 24px;
+    line-height:2.3;
 }
 
 .relation-text,
@@ -536,9 +541,11 @@ table {
 .flex-footer {
     display: flex;
 }
-.flex-footer form{
+
+.flex-footer form {
     margin-right: 0px !important;
 }
+
 .flex-footer a {
     margin-left: 2px;
 }

@@ -1,0 +1,182 @@
+/* This code is for maing background white */
+body {
+    background-color: #fff !important;
+}
+
+.bg-color-blue,
+.bg-color-blue-white {
+    background-color: #F6F8F3;
+}
+
+.bg-color-blues {
+    padding: 47px 0;
+    background-color: #F6F8F3;
+}
+
+
+/* This code is for maing background white ends here*/
+/*  */
+.painting-heading h1 {
+    background: #7692FF;
+    color: #F6F8F3;
+    padding: 41px 20px 41px 0px;
+}
+
+/*  */
+/*the gird imgies and cart starts here  */
+.imgaies-cart-text {
+    display: flex;
+    width: 100%;
+    margin: 64px 0 68px 0;
+}
+
+.painting-grid-images {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 17px;
+    column-gap: 20px;
+}
+
+.hero-img {
+    grid-column: 1/5;
+}
+
+.cart-text {
+    width: 50%;
+    padding-left: 71px;
+}
+
+
+.painting-grid-images img {
+    width: 100%;
+}
+
+.cart-flex {
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding-bottom: 28px;
+    border-bottom: 1px solid #8E8E8E;
+}
+
+.btn-remove-flex {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.value-btn {
+    display: flex;
+    border: 2px solid #E7E7E7;
+    width: 85px;
+    align-items: center;
+    justify-content: center;
+}
+
+#totalClicks {
+    padding-right: 35px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.value-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.value-flex a {
+    cursor: pointer;
+}
+
+.cart-flex h4 a {
+    text-decoration: none;
+    color: #F6F8F3;
+}
+
+.cart-text h2 {
+    line-height: 2.5;
+}
+
+.star-number {
+    font-size: 10px;
+    line-height: 13.5px;
+}
+
+.add-cart {
+    margin-left: 19px;
+    background: #E85F5C;
+    padding: 17px 54.5px;
+}
+
+.buy-now {
+    margin-left: 19px;
+    background: #7692FF;
+    padding: 17px 67px;
+}
+
+.share-logo {
+    display: flex;
+    margin-top: 19px;
+}
+
+.svg-img {
+    margin-left: 63px;
+}
+
+.svg-img img {
+    margin-right: 20px;
+}
+/*  */
+
+/*the gird imgies and cart ends here  */
+/*  */
+.tab {
+    overflow: hidden;
+}
+
+.tablinks {
+    text-align: center;
+    border: none;
+    outline: none;
+    background: #ffff;
+    cursor: pointer;
+}
+
+.tabcontent {
+    display: none;
+}
+.desc-paadigng {
+    text-align: center;
+    padding: 0 5%;
+}
+
+#London {
+    padding: 2% 10%;
+}
+.tabcontent p{
+    font-weight: 500;
+}
+.tabcontent h4{
+    padding-top: 2%;
+    font-size: 30px;
+    font-weight: 300;
+}
+.border-bl{
+    border: 2px solid #f2f2f2;
+    padding: 0 ;
+}
+
+
+/*  */
+/* the footer subscribe button */
+.subscribe {
+    padding-bottom: 10px;
+}
+
+/* media screen @520 starts from here */
+@media screen and (max-width:520px) {
+    .nav-section {
+        background-color: #fff !important;
+    }
+}
+
+/* media screen @520 ends here  */
