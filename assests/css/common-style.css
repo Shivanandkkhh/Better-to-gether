@@ -111,6 +111,14 @@ section {
     font-family: 'Mont-SemiBold';
     src: url(/assests/fonts/Mont-SemiBold.woff2);
 }
+:root{
+    --font-hind:'Hind';
+    --font-14:14px;
+    --font-16:16px;
+    --font-18:18px;
+    --color-E85F5C:#E85F5C;
+    --color-F5F8F3:#F5F8F3;
+}
 
 body {
     line-height: 1;
@@ -148,9 +156,14 @@ table {
 /* <!-- the first section conatains contact infomation starts here --> */
 
 .first-section {
-    background: #E85F5C;
+    background: var(--color-E85F5C);
     /* background: #7692FF; */
     color: #ffff;
+}
+
+.contact {
+    text-align: center;
+    padding: 48px 48px 48px 0;
 }
 
 .container {
@@ -164,7 +177,7 @@ table {
 }
 
 .s-font {
-    color: #F5F8F3;
+    color: var(--color-F5F8F3);
     text-decoration: none;
 }
 
@@ -220,7 +233,7 @@ table {
 }
 
 .event-options a {
-    font-size: 14px;
+    font-size: var(--font-14);
     color: #000000;
 }
 
@@ -241,8 +254,8 @@ table {
 }
 
 .adj-font {
-    font-size: 14px !important;
-    line-height: 18px !important;
+    font-size: var(--font-14) !important;
+    line-height: var(--font-18) !important;
 }
 
 .d-none {
@@ -250,7 +263,7 @@ table {
 }
 
 .nav-btn {
-    color: #E85F5C !important;
+    color: var(--color-E85F5C) !important;
     border: 1px solid #E85F5C;
     background-color: #F6F8F3;
     border-style: none;
@@ -277,7 +290,7 @@ table {
 }
 
 .nav-section {
-    margin: 16px 0 13px 0;
+    padding: 16px 0 13px 0;
     position: sticky;
     top: 0px;
     z-index: 0;
@@ -336,27 +349,31 @@ table {
 .subscribe {
     border: none;
     outline: none;
-    background-color: #F5F8F3;
-    line-height: 40px;
-    /* float: right; */
+    background-color: var(--color-F5F8F3);
+    border-bottom: 1px solid #000000;
+    margin-left: 28%;
 }
 
 .font-f-hind {
-    font-family: 'Hind';
+    font-family: var(--font-hind);
 }
 
 .font-s-14 {
     font-size: 14px !important;
 }
 
+.font-s-12 {
+    font-size: 12px;
+}
+
 .line-h-18 {
-    line-height: 18px;
+    line-height:var(--font-18);
 }
 
 .f-font,
 .font-w-700 {
     font-weight: 700;
-    line-height: 16px;
+    line-height:16px;
 }
 
 .grace-text {
@@ -377,10 +394,15 @@ table {
     font-weight: 800;
 }
 
+.font-s-24 {
+    font-size: 24px;
+    line-height:2.3;
+}
+
 .relation-text,
 .feel-text {
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font-16);
     line-height: 34px;
 }
 
@@ -389,11 +411,11 @@ table {
 }
 
 .color-pink {
-    color: #E85F5C;
+    color: var(--color-E85F5C);
 }
 
 .back-c-pink {
-    background-color: #E85F5C;
+    background-color: var(--color-E85F5C);
 }
 
 .subscribe,
@@ -405,7 +427,7 @@ table {
 .realtion-heading,
 .event-text {
     font-size: 30px;
-    color: #E85F5C;
+    color: var(--color-E85F5C);
     line-height: 38px;
 }
 
@@ -424,6 +446,17 @@ table {
 }
 
 
+.image-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6.7%;
+    row-gap: 9.2%;
+}
+
+.image-grid img {
+    width: 100%;
+}
 
 /*  */
 
@@ -433,13 +466,13 @@ table {
 }
 
 .underlined {
-    color: #F5F8F3;
+    color: var(--color-F5F8F3);
     border-bottom: 2px solid #F5F8F3;
 }
 
 .underlined:hover {
     border: none;
-    color: #F5F8F3 !important;
+    color: var(--color-F5F8F3) !important;
     cursor: pointer;
     color: rgb(22, 237, 62);
     /* text-decoration: underline rgb(15, 184, 241); */
@@ -448,7 +481,7 @@ table {
 
 .underline a {
     text-decoration: none;
-    color: #F5F8F3;
+    color: var(--color-F5F8F3);
 }
 
 .underline {
@@ -489,7 +522,7 @@ table {
 
 .footer {
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
     margin: 99px 0 26px 0;
 
 }
@@ -501,7 +534,7 @@ table {
 
 .f-color a {
     color: #7692FF;
-    font-size: 14px !important;
+    font-size: var(--font-14) !important;
     text-decoration: none;
 }
 
@@ -512,6 +545,14 @@ table {
 
 .flex-footer {
     display: flex;
+}
+
+.flex-footer form {
+    margin-right: 0px !important;
+}
+
+.flex-footer a {
+    margin-left: 2px;
 }
 
 .m1-top {
@@ -531,7 +572,7 @@ table {
     margin: 20px 0;
 }
 
-.line {
+.flex-footer .line {
     text-align: left;
     width: 60%;
 }
@@ -567,15 +608,12 @@ table {
 form .footer-form {
     outline: none;
     border: none;
-    background-color: #F5F8F3;
+    background-color: var(--color-F5F8F3);
     border-bottom: 1px solid #000000;
-    width: 90%;
-    /* text-decoration: underline; */
 }
 
 .footer-padding-remove {
     font-family: 'Hind';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
@@ -583,7 +621,21 @@ form .footer-form {
 
 }
 
-/*  */
+.we-heading {
+    width: 100%;
+    background: var(--color-E85F5C);
+    height: 12.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* media query for 980 starts here */
+
 @media screen and (max-width:980px) {
     .adj-text {
         display: none;
@@ -604,12 +656,10 @@ form .footer-form {
     .msg-area {
         width: 260%;
     }
-}
 
-/* media query for 980 ends here */
-/* media query for 980 starts here */
-
-@media screen and (max-width:980px) {
+    .subscribe {
+        margin-left: 0;
+    }
     .adj-text {
         display: none;
     }
@@ -621,6 +671,17 @@ form .footer-form {
     .third-s-text h2 {
         width: 100%;
     }
+    .nav-section li {
+        margin-right: 1px;
+    }
+
+    .footer-sub1,
+    .footer-sub3,
+    .footer-sub2,
+    .footer-sub4 {
+        padding: 0 30px 0 0;
+    }
+
 }
 
 /* media query for 768 starts here */
@@ -702,7 +763,8 @@ form .footer-form {
     }
 
     .nav-section {
-        margin: 19px 0 0 0;
+        padding: 7px 0 4px 0px;
+        /* margin: 19px 0 0 0; */
     }
 
     .policy {
@@ -721,16 +783,23 @@ form .footer-form {
         margin-top: 2px;
     }
 
+    .footer-sub1,
+    .footer-sub3,
+    .footer-sub2,
+    .footer-sub4 {
+        padding: 0 2px 0 0;
+    }
+
     .above-hr {
         margin-top: 12.5%;
     }
 
     .footer-text {
-        font-size: 14px;
+        font-size: var(--font-14);
     }
 
     .font-s-16 {
-        font-size: 16px !important;
+        font-size: var(--font-16) !important;
     }
 
     .image-grid {
@@ -757,7 +826,7 @@ form .footer-form {
     }
 
     .footer-text {
-        font-size: 14px;
+        font-size:var(--font-14);
     }
 
     .footer-sub1,

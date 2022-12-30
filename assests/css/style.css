@@ -48,6 +48,7 @@
     font-size: 30px;
     color: #E85F5C;
     line-height: 38px;
+    /* width: 108%; */
 }
 .relation-text,.f-font {
     color: #F6F8F3;
@@ -129,7 +130,10 @@
 .make-center {
     text-align: center;
 }
-
+.make-centere{
+    text-align: center;
+   margin: 0 20px;
+}
 .what-text,.feel-text,.relation-text,.footer-text {
     font-family: 'Hind',Arial, Helvetica, sans-serif;
 }
@@ -247,15 +251,6 @@
 .tenth-section {
     margin-top: 5.45%;
 }
-
-.we-heading {
-    width: 100%;
-    background: #E85F5C;
-    height: 12.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .underline a{
     text-decoration: none;
     color:#F5F8F3;
@@ -303,7 +298,6 @@
     margin-top: 11% !important;
 }
 
-
 /* ninth section ends here */
 
 
@@ -315,6 +309,9 @@
     .nav-section li {
         margin-right: 50px;
         list-style: none;
+    }
+    .relation-section{
+        width: 80%;
     }
 }
 
@@ -396,7 +393,9 @@
         margin: 5.2% 0 0 13%;
 
     }
-
+    .top-margin{
+        margin-top: 1px;
+    }
     .seventh-section {
         background-image: none;
     }
@@ -412,11 +411,15 @@
     .relation-section {
         width: 100%;
     }
-
+    .index-text-center{
+        text-align: center;
+    }
     .m-top {
         margin: 5px 0 30px 0;
     }
-
+    .event-text {
+        padding: 5% 0 !important;
+    }
     .footer-text {
         font-size: 14px;
     }

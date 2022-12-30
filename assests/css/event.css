@@ -1,0 +1,255 @@
+/* This code is for maing background white */
+body {
+    background-color: #fff !important;
+}
+
+.bg-color-blue,
+.bg-color-blue-white {
+    background-color: #F6F8F3;
+}
+
+.bg-color-blues {
+    padding: 47px 0;
+    background-color: #F6F8F3;
+}
+
+.color-white {
+    background-color: #E85F5C;
+}
+
+/* This code is for maing background white ends here*/
+/* The below section is for filter and sorting options */
+.reach-us {
+    margin-top: 7.2%;
+}
+
+.BgWhite {
+    margin: 20px 0;
+}
+
+.flex-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#checkboxes {
+    display: none;
+    position: absolute;
+    border: 1px solid #8E8E8E;
+    background: #FFFFFF;
+    width: 31%;
+}
+
+#checkboxes label {
+    display: block;
+    padding: 10px 0px 13px 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.select-option {
+    display: flex;
+}
+
+.select-option select {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #8E8E8E;
+    padding-left: 14px;
+    background: #fff;
+}
+
+.select-2 {
+    display: none;
+}
+
+.select-option p {
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.filter {
+    background: #7692FF;
+    height: 41px;
+    width: 181px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    position: relative;
+}
+
+.filter-div svg {
+    display: none;
+
+}
+
+.count-down-div {
+    width: 93%;
+    border-bottom: 1px solid #8E8E8E;
+    padding: 11px;
+    text-align: center;
+}
+
+#checkboxes span {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* The above section is for filter and sorting options */
+/* The below code is for making imagies responsive through grid */
+.event-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.36%;
+    row-gap: 7.7%;
+    margin-bottom: 11.8%;
+}
+
+.event-image-grid img {
+    width: 100%;
+}
+
+.cmn-img {
+    width: 100%;
+}
+
+.image-info {
+    font-family: Mont;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.cmn-img img {
+    width: 100%;
+    height: auto;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    font-weight: 600 !important;
+}
+
+.top-btm-m {
+    margin-bottom: 14.1%;
+}
+
+/* The below code is for making imagies responsive through grid ends here */
+
+/* The below code contains the about us of event page */
+section h5 {
+    padding-top: 4.1%;
+}
+
+.we-heading h3 {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-set {
+    max-width: 1196px;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.above-hr {
+    margin-top: 0 !important;
+}
+.subscribe{
+    padding-bottom: 10px;
+}
+/* The below code contains the about us of event page */
+
+/* media querry @980 starts from here
+@media screen and (max-width:980px) {
+    
+}
+
+media querry @980 ends from here */
+
+/* media querry @980 starts from here */
+@media screen and (max-width:768px) {
+    .top-btm-m {
+        margin-bottom: 20%;
+    }
+}
+
+/* media querry @980 ends from here */
+/* media querry @980 starts from here */
+@media screen and (max-width:520px) {
+    .nav-section {
+        background-color: #fff !important;
+    }
+
+    .select-2 {
+        display: block;
+    }
+
+    .select-1 {
+        display: none;
+    }
+
+    .select-2 select {
+        -webkit-appearance: none;
+    }
+
+    .filter-div button {
+        display: none;
+    }
+
+    .filter-div svg {
+        display: block;
+    }
+
+    .margin-setting {
+        margin: 0 1px !important;
+    }
+
+    .event-text {
+        padding: 9% 0 !important;
+    }
+
+    .font-s-40px {
+        font-size: 30px !important;
+    }
+
+    .text-center {
+        text-align: left !important;
+        padding-left: 20px;
+    }
+
+    .bg-color-blues {
+        background-color: #fff;
+    }
+
+    .we-heading h3 {
+        padding: 0 20px;
+    }
+
+    /* .bg-color-blue-white{
+        background-color: #fff !important;
+    } */
+    .event-image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50%;
+    }
+
+    .top-btm-m {
+        margin-bottom: 35%;
+    }
+
+    .contact {
+        padding: 40px 0px 40px 0px !important;
+    }
+
+}
+
+/* media querry @980 ends from here */
