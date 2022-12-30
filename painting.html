@@ -330,20 +330,13 @@
             <div class="imgaies-cart-text">
                 <div class="painting-grid-images">
                     <div class="hero-img">
-                        <img src="./assests/imagies/paiting-imagies/Hero_banner.jpg" alt="Hero-banner">
+                        <img id="replace_img" src="./assests/imagies/paiting-imagies/Hero_banner.jpg" alt="Hero-banner">
                     </div>
-                    <div class="sub-img">
-                        <img src="./assests/imagies/paiting-imagies/painting-brushess-discussion.jpg"
-                            alt="painting-brushess-discussion">
-                    </div>
-                    <div class="sub-img">
-                        <img src="./assests/imagies/paiting-imagies/painting-hands.jpg" alt="painting-hands">
-                    </div>
-                    <div class="sub-img">
-                        <img src="./assests/imagies/paiting-imagies/painting-bottles.jpg" alt="painting-bottles">
-                    </div>
-                    <div class="sub-img">
-                        <img src="./assests/imagies/paiting-imagies/painting-discussion.jpg" alt="painting-discussion">
+                    <div class="sub-img cur-point">
+                        <img   src="./assests/imagies/paiting-imagies/paint_couple.svg"alt="painting-brushess-discussion" onclick="myFunction(this)">
+                        <img src="./assests/imagies/paiting-imagies/pian_hand.svg" alt="painting-hands"onclick="myFunction(this)">
+                        <img src="./assests/imagies/paiting-imagies/paint_bottle.svg" alt="painting-bottles"onclick="myFunction(this)">
+                        <img src="./assests/imagies/paiting-imagies/paint_explain.svg" alt="painting-discussion"onclick="myFunction(this)">
                     </div>
                 </div>
                 <div class="cart-text">
@@ -357,15 +350,28 @@
                     <div class="font-w-800 font-s-24">$75.00</div>
                     <div class="cart-flex">
                         <div class="value-btn">
-                            <span id="totalClicks">0</span>
+                            <span id="totalClicks">1</span>
                             <div class="value-flex">
-                                <a onclick="totalClick(1)">+</a>
-                                <a onclick="totalClick(-1)">-</a>
+                                <a onclick="totalClick(1)"><img
+                                        src="./assests/imagies/paiting-imagies/Polygon_above.svg" alt="Polygon_up"></a>
+                                <a onclick="totalClick(-1)"><img
+                                        src="./assests/imagies/paiting-imagies/Polygon _down.svg"
+                                        alt="Polygon_down"></a>
                             </div>
                         </div>
-                        <h4 class="add-cart"><a href=""> Add to Cart </a></h4>
-                        <h4 class="buy-now"><a href="">Buy Now</a></h4>
+                        <div class="add-buy-flex">
+                            <div class="add-cart cur-point">
+                                <h4><a href=""> Add to Cart </a></h4>
+                            </div>
+                            <div class="buy-now buy-now-block cur-point">
+                                <h4><a href="">Buy Now</a></h4>
+                            </div>
+                        </div>
                     </div>
+                    <div class="buy-none-block">
+                        <h5><a href="">Buy now</a></h5>
+                    </div>
+                    <div class="border-1px"></div>
                     <div class="share-logo">
                         <h5 class="star-number share">Share:</h5>
                         <span class="svg-img">
@@ -378,34 +384,44 @@
         </div>
     </div>
     <!-- the gird of imgies and paint date night section ends here -->
+    <!-- the review and desciption section starts from here -->
     <section class="container">
 
-        <div class="margin-set desc-paadigng">
-            <button class="tablinks font-w-700 font-s-14 " onclick="openCity(event, 'London' )">Description</button>
-            <button class="tablinks font-w-700 font-s-14" onclick="openCity(event, 'Paris')">Review (10)</button>
-
-            <div id="London" class="tabcontent">
+        <div class="margin-set ">
+            <div class="desc-paadigng text-center">
+                <button class="tablinks font-w-700 font-s-14 Descri  tab-active">Description</button>
+                <button class="tablinks font-w-700 font-s-14">Review(10)</button>
+            </div>
+            <div id="Description" class="tabcontent tab-content-active">
                 <p class="font-s-16 line-spacing font-f-hind">Sed ut perspiciatis unde omnis iste natus error sit
                     voluptatem accusantium doloremque laudantium, totam
-                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                    sunt
                     explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                    qui
                     dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
                     tempora
                     incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-                    aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                    <br>
+                    <br>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                    ut
+                    aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+                    velit
                     esse
-                    quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                </p>
             </div>
 
-            <div id="Paris" class="tabcontent border-bl">
+            <div id="Review" class="tabcontent border-bl tab-none">
                 <h4> Customer Reviews</h4>
                 <p class="font-s-16 line-spacing font-f-hind"> No reviews yet</p>
             </div>
         </div>
     </section>
+
+    <!-- the review and desciption section starts from here -->    
     <!--the bg-color blue starts from here  -->
     <section class="bg-color-blue-white">
         <!-- The content Ends here -->
@@ -488,7 +504,8 @@
                                 <p class="footer-text font-f-hind"><a href="./index-pop_up.html" target="_blank">Pop-Up
                                         Date
                                         Nights</a></p>
-                                <p class="footer-text font-f-hind"><a href="" target="_blank">Grace Marriage Getaway</a>
+                                <p class="footer-text font-f-hind"><a href="" target="_blank">Grace Marriage
+                                        Getaway</a>
                                 </p>
                                 <p class="footer-text font-f-hind"><a href="" target="_blank">
                                         Ready. Set. Re-engage</a>
@@ -510,7 +527,8 @@
 
                             <h4 class="f-font f-color"><a href="" target="_blank">Be In The Know</a></h4>
                             <div class="m-top">
-                                <p class="footer-text font-f-hind"><a href="" target="_blank">Promotions, new events &
+                                <p class="footer-text font-f-hind"><a href="" target="_blank">Promotions, new events
+                                        &
                                         sales
                                         Directly
                                         to your inbox.</a></p>

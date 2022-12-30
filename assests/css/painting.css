@@ -15,7 +15,7 @@ body {
 
 
 /* This code is for maing background white ends here*/
-/*  */
+/*The   */
 .painting-heading h1 {
     background: #7692FF;
     color: #F6F8F3;
@@ -32,15 +32,59 @@ body {
 
 .painting-grid-images {
     width: 50%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 17px;
-    column-gap: 20px;
+    column-gap: 20px; */
+}
+
+/* .hero-img {
+    grid-column: 1/5;
+} */
+.sub-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 19px;
+    padding: 17px 0 0px 0;
+    /* width: 100%;
+    max-width: 132px; */
+}
+
+.sub-img img:hover {
+    opacity: 0.9;
+
 }
 
 .hero-img {
-    grid-column: 1/5;
+    position: relative;
+    padding-top: 100%;
 }
+
+.hero-img img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* height: auto; */
+    /* max-width: 588px; */
+}
+
+.sub-img img {
+    width: 100%;
+    /* max-width: 132px; */
+    display: block;
+    /* height: auto; */
+}
+
+/*
+.sub-img img {
+    display: block;
+} */
 
 .cart-text {
     width: 50%;
@@ -50,13 +94,19 @@ body {
 
 .painting-grid-images img {
     width: 100%;
+    /* display: block; */
 }
 
+/* the gird imgie ends here */
+/* The text beside grid imagies starts from here */
 .cart-flex {
     display: flex;
-    /* justify-content: space-evenly; */
-    padding-bottom: 28px;
-    border-bottom: 1px solid #8E8E8E;
+    width: 100%;
+}
+
+.add-buy-flex {
+    display: flex;
+    width: 100%;
 }
 
 .btn-remove-flex {
@@ -73,7 +123,7 @@ body {
 }
 
 #totalClicks {
-    padding-right: 35px;
+    padding: 0 35px 0 10px;
     font-weight: 600;
     font-size: 14px;
 }
@@ -81,19 +131,20 @@ body {
 .value-flex {
     display: flex;
     flex-direction: column;
+    padding-right: 10px;
 }
 
 .value-flex a {
     cursor: pointer;
 }
 
-.cart-flex h4 a {
+.add-buy-flex a {
     text-decoration: none;
     color: #F6F8F3;
 }
 
 .cart-text h2 {
-    line-height: 2.5;
+    padding-bottom: 2%;
 }
 
 .star-number {
@@ -103,19 +154,54 @@ body {
 
 .add-cart {
     margin-left: 19px;
+    width: 203px;
+    height: 50px;
     background: #E85F5C;
-    padding: 17px 54.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart:hover {
+    background-color: #7692FF;
 }
 
 .buy-now {
+    width: 203px;
+    height: 50px;
     margin-left: 19px;
     background: #7692FF;
-    padding: 17px 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy-now:hover {
+    background-color: #E85F5C;
+}
+
+.buy-none-block {
+    margin: 20px 0 0 0;
+    height: 50px;
+    width: 100%;
+    background-color: #7692FF;
+    display: none;
+}
+
+.buy-none-block a {
+    text-decoration: none;
+    color: #E7E7E7;
+}
+
+.border-1px {
+    margin-top: 28px;
+    border-top: 1px solid #8E8E8E;
 }
 
 .share-logo {
     display: flex;
     margin-top: 19px;
+
 }
 
 .svg-img {
@@ -125,10 +211,11 @@ body {
 .svg-img img {
     margin-right: 20px;
 }
-/*  */
 
-/*the gird imgies and cart ends here  */
-/*  */
+/* the text beside banner image ends from here  */
+
+
+/*the description and reciew section starts from here  */
 .tab {
     overflow: hidden;
 }
@@ -141,41 +228,156 @@ body {
     cursor: pointer;
 }
 
-.tabcontent {
-    display: none;
-}
-.desc-paadigng {
-    text-align: center;
-    padding: 0 5%;
+/* .Descri.active{
+    border-bottom: 1px solid #8E8E8E;
+} */
+/* .desc-paadigng button.active {
+    line-height: 1.5;
+    border-bottom: 1px solid #8E8E8E;
 }
 
-#London {
-    padding: 2% 10%;
+.tab-none {
+    display: none;
+} */
+.tabcontent{
+    display:none;
 }
-.tabcontent p{
+.tabcontent.tab-content-active{
+    display: block;
+}
+.tablinks.tab-active{
+  /* text-decoration: underline; */
+  border-bottom: 1px solid #8E8E8E;
+  cursor: pointer;
+}
+
+
+#Description {
+    padding: 25px 90px;
+
+}
+
+#Review {
+    margin: 2% 0;
+    padding: 0 2% 2% 2%;
+}
+
+.tabcontent p {
     font-weight: 500;
 }
-.tabcontent h4{
+
+.tabcontent h4 {
     padding-top: 2%;
     font-size: 30px;
     font-weight: 300;
 }
-.border-bl{
+
+.border-bl {
     border: 2px solid #f2f2f2;
-    padding: 0 ;
+    padding: 0;
 }
 
+/*the description and reciew section ends here  */
 
-/*  */
 /* the footer subscribe button */
 .subscribe {
     padding-bottom: 10px;
+}
+
+@media screen and (max-width:1020px) {
+
+    .add-cart,
+    .buy-now {
+        width: 150px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width:980px) {
+
+    .add-cart,
+    .buy-now {
+        width: 120px;
+        height: 50px;
+    }
+
+    #Description {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .add-cart {
+        width: 92% !important;
+    }
+
+    .add-cart,
+    .buy-now {
+        width: 100%;
+        height: 50px;
+    }
+
+    .imgaies-cart-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Description {
+        padding: 20px 0;
+    }
+
+    .cart-text {
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+
+    .painting-grid-images {
+        width: 100%;
+    }
 }
 
 /* media screen @520 starts from here */
 @media screen and (max-width:520px) {
     .nav-section {
         background-color: #fff !important;
+    }
+
+    .cart-text {
+        margin-top: 0px;
+    }
+
+    .add-cart {
+        width: 203px;
+        height: 50px;
+    }
+
+    .add-buy-flex {
+        flex-direction: column;
+    }
+
+    .buy-now-block {
+        display: none;
+    }
+
+    .buy-none-block {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Review {
+        margin: 4% 0;
+    }
+
+    .svg-img {
+        margin-left: 32px;
+    }
+
+    .line-spacing {
+        line-height: 30px !important;
     }
 }
 
