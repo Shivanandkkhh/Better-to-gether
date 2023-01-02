@@ -14,15 +14,16 @@ body {
 }
 
 
-/* This code is for maing background white ends here*/
-/*The   */
+/* This code is for  background white ends here*/
+/*The code for heading of product page starts here  */
 .painting-heading h1 {
     background: #7692FF;
     color: #F6F8F3;
     padding: 41px 20px 41px 0px;
 }
 
-/*  */
+/*The code for heading of product page starts here  */
+
 /*the gird imgies and cart starts here  */
 .imgaies-cart-text {
     display: flex;
@@ -32,27 +33,18 @@ body {
 
 .painting-grid-images {
     width: 50%;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 17px;
-    column-gap: 20px; */
+  
 }
 
-/* .hero-img {
-    grid-column: 1/5;
-} */
 .sub-img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 19px;
     padding: 17px 0 0px 0;
-    /* width: 100%;
-    max-width: 132px; */
 }
 
 .sub-img img:hover {
     opacity: 0.9;
-
 }
 
 .hero-img {
@@ -70,22 +62,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* height: auto; */
-    /* max-width: 588px; */
 }
 
 .sub-img img {
     width: 100%;
-    /* max-width: 132px; */
     display: block;
-    /* height: auto; */
 }
-
-/*
-.sub-img img {
-    display: block;
-} */
-
 .cart-text {
     width: 50%;
     padding-left: 71px;
@@ -94,11 +76,17 @@ body {
 
 .painting-grid-images img {
     width: 100%;
-    /* display: block; */
 }
-
+.mainImg.main-active{
+    display: block;
+}
+.mainImg{
+    display: none;
+}
 /* the gird imgie ends here */
-/* The text beside grid imagies starts from here */
+
+
+/* -----------The text beside grid imagies starts from here --------*/
 .cart-flex {
     display: flex;
     width: 100%;
@@ -190,7 +178,7 @@ body {
 
 .buy-none-block a {
     text-decoration: none;
-    color: #E7E7E7;
+    color: #fff;
 }
 
 .border-1px {
@@ -228,17 +216,7 @@ body {
     cursor: pointer;
 }
 
-/* .Descri.active{
-    border-bottom: 1px solid #8E8E8E;
-} */
-/* .desc-paadigng button.active {
-    line-height: 1.5;
-    border-bottom: 1px solid #8E8E8E;
-}
 
-.tab-none {
-    display: none;
-} */
 .tabcontent{
     display:none;
 }
@@ -246,14 +224,13 @@ body {
     display: block;
 }
 .tablinks.tab-active{
-  /* text-decoration: underline; */
   border-bottom: 1px solid #8E8E8E;
   cursor: pointer;
 }
 
 
 #Description {
-    padding: 25px 90px;
+    padding: 25px 140px;
 
 }
 
@@ -277,7 +254,7 @@ body {
     padding: 0;
 }
 
-/*the description and reciew section ends here  */
+/*the description and review section ends here  */
 
 /* the footer subscribe button */
 .subscribe {

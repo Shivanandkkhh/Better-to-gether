@@ -1,3 +1,19 @@
+// for showing imagies when clicking on small imgies
+const smalimg = document.querySelectorAll(".smalImg");
+const productImg = document.querySelectorAll(".mainImg");
+for (let i = 0; i < smalimg.length; i++) {
+  smalimg[i].addEventListener("click", () => {
+    for (let j = 0; j < productImg.length; j++) {
+      productImg[j].classList.remove('main-active');
+    }
+    for (let k = 0; k < smalimg.length; k++) {
+      smalimg[k].classList.remove('Active-img');
+    }
+    productImg[i].classList.add('main-active');
+    smalimg[i].classList.add('Active-img');
+  })
+}
+
 
 // for inceremnet or decrement the number of add cart 
 function totalClick(click) {
@@ -5,29 +21,12 @@ function totalClick(click) {
   const sumvalue = parseInt(totalClicks.innerText) + click;
   console.log(sumvalue + click);
   totalClicks.innerText = sumvalue;
-  // 
   if (sumvalue < 0) {
     totalClicks.innerText = 0;
   }
 }
 
 // for descrpition and review tablinks replacing
-// function openCity(evt, cityName) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-
-
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-//   document.getElementById(cityName).style.display = "block";
-//   evt.currentTarget.className += "active";
-// }
-
 const tabs = document.querySelectorAll(".tablinks");
 const tabcontent = document.querySelectorAll(".tabcontent");
 for (let i = 0; i < tabs.length; i++) {
@@ -43,15 +42,5 @@ for (let i = 0; i < tabs.length; i++) {
     tabs[i].classList.add("tab-active")
   })
 }
-// for replacing the imgies
-function myFunction(img) {
-  var manImg = document.getElementById("replace_img");
-  manImg.src = img.src;
-}
 
 
-
-
-
-// document.getElementById("image").classList.add("slide-right");
-// code for replacing tabs?

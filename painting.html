@@ -307,11 +307,7 @@
                                 d="M1.49026 0.5H15.7065C16.1846 0.5 16.5671 0.875 16.5671 1.34375C16.5671 1.8125 16.1846 2.1875 15.7065 2.1875H1.49026C1.01214 2.1875 0.629639 1.8125 0.629639 1.34375C0.629639 0.875 1.01214 0.5 1.49026 0.5Z"
                                 fill="black" />
                         </svg>
-
-                        <!-- <span class="material-symbols-outlined"></span>
-                    <span class="material-symbols-outlined">menu</span> -->
                     </div>
-                    <!-- flex-item -->
                 </div>
             </header>
         </div>
@@ -329,18 +325,39 @@
         <div class="margin-set">
             <div class="imgaies-cart-text">
                 <div class="painting-grid-images">
-                    <div class="hero-img">
-                        <img id="replace_img" src="./assests/imagies/paiting-imagies/Hero_banner.jpg" alt="Hero-banner">
+                    <div class="hero-img tab-content-active">
+                        <img class="mainImg main-active" id="productImg"
+                            src="./assests/imagies/paiting-imagies/paint_couple.svg" alt="painting-brushess-discussion">
+                        <img class="mainImg " id="productImg2" src="./assests/imagies/paiting-imagies/pian_hand.svg"
+                            alt="painting-hands">
+                        <img class="mainImg " id="productImg3" src="./assests/imagies/paiting-imagies/paint_bottle.svg"
+                            alt="painting-bottles">
+                        <img class="mainImg" id="productImg4" src="./assests/imagies/paiting-imagies/paint_explain.svg"
+                            alt="painting-discussion">
                     </div>
                     <div class="sub-img cur-point">
-                        <img   src="./assests/imagies/paiting-imagies/paint_couple.svg"alt="painting-brushess-discussion" onclick="myFunction(this)">
-                        <img src="./assests/imagies/paiting-imagies/pian_hand.svg" alt="painting-hands"onclick="myFunction(this)">
-                        <img src="./assests/imagies/paiting-imagies/paint_bottle.svg" alt="painting-bottles"onclick="myFunction(this)">
-                        <img src="./assests/imagies/paiting-imagies/paint_explain.svg" alt="painting-discussion"onclick="myFunction(this)">
+                        <!-- the below imagies clicking they shoes the above imagies like hero imagies -->
+                        <div class="smalImg">
+                            <img class=" Active-img" src="./assests/imagies/paiting-imagies/paint_couple.svg"
+                                alt="painting-brushess-discussion">
+                        </div>
+                        <div class="smalImg">
+                            <img class=" Active-img" src="./assests/imagies/paiting-imagies/pian_hand.svg"
+                                alt="painting-hands">
+                        </div>
+                        <div class="smalImg">
+                            <img class=" Active-img" src="./assests/imagies/paiting-imagies/paint_bottle.svg"
+                                alt="painting-bottles">
+                        </div>
+                        <div class="smalImg">
+                            <img class=" Active-img" src="./assests/imagies/paiting-imagies/paint_explain.svg"
+                                alt="painting-discussion">
+                        </div>
                     </div>
                 </div>
                 <div class="cart-text">
                     <h2 class="reach-us event-text">Painting with a Twist: Date Night</h2>
+                    <!-- the below imagies defines the rating stars -->
                     <img src="./assests/imagies/paiting-imagies/star-red.svg" alt="red-star">
                     <img src="./assests/imagies/paiting-imagies/star-red.svg" alt="red-star">
                     <img src="./assests/imagies/paiting-imagies/star-red.svg" alt="red-star">
@@ -351,6 +368,7 @@
                     <div class="cart-flex">
                         <div class="value-btn">
                             <span id="totalClicks">1</span>
+                            <!-- the below code is for button increment or decrement the values -->
                             <div class="value-flex">
                                 <a onclick="totalClick(1)"><img
                                         src="./assests/imagies/paiting-imagies/Polygon_above.svg" alt="Polygon_up"></a>
@@ -359,15 +377,18 @@
                                         alt="Polygon_down"></a>
                             </div>
                         </div>
+                        <!-- the below buttons for add to cart and buy now buttons -->
                         <div class="add-buy-flex">
                             <div class="add-cart cur-point">
                                 <h4><a href=""> Add to Cart </a></h4>
                             </div>
+                            <!-- the below button not visible for mobile section -->
                             <div class="buy-now buy-now-block cur-point">
                                 <h4><a href="">Buy Now</a></h4>
                             </div>
                         </div>
                     </div>
+                    <!-- this button for mobile section only it is visible -->
                     <div class="buy-none-block">
                         <h5><a href="">Buy now</a></h5>
                     </div>
@@ -389,6 +410,7 @@
 
         <div class="margin-set ">
             <div class="desc-paadigng text-center">
+                <!-- the description and review buttons -->
                 <button class="tablinks font-w-700 font-s-14 Descri  tab-active">Description</button>
                 <button class="tablinks font-w-700 font-s-14">Review(10)</button>
             </div>
@@ -413,7 +435,7 @@
                     quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                 </p>
             </div>
-
+            <!-- To display review content -->
             <div id="Review" class="tabcontent border-bl tab-none">
                 <h4> Customer Reviews</h4>
                 <p class="font-s-16 line-spacing font-f-hind"> No reviews yet</p>
@@ -421,7 +443,7 @@
         </div>
     </section>
 
-    <!-- the review and desciption section starts from here -->    
+    <!-- the review and desciption section starts from here -->
     <!--the bg-color blue starts from here  -->
     <section class="bg-color-blue-white">
         <!-- The content Ends here -->
@@ -496,6 +518,7 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- the helpfull footer links -->
                         <div class="footer-sub2">
 
                             <h4 class="f-font f-color"><a href="" target="_blank">Helpful Links</a><a></h4>
@@ -512,6 +535,7 @@
                                 </p>
                             </div>
                         </div>
+                        <!-- the reach out footer -->
                         <div class="footer-sub3">
 
                             <h4 class="f-font f-color"><a href="" target="_blank">Reach Out</a></h4>
@@ -524,7 +548,7 @@
                         </div>
 
                         <div class="footer-sub4">
-
+                            <!-- the be in know footer section -->
                             <h4 class="f-font f-color"><a href="" target="_blank">Be In The Know</a></h4>
                             <div class="m-top">
                                 <p class="footer-text font-f-hind"><a href="" target="_blank">Promotions, new events
@@ -538,6 +562,7 @@
                                     <a href=""> <button class="subscribe"> SUBSCRIBE</button> </a>
                                 </div>
                             </div>
+                            <!-- the below are social mesia icons -->
                             <div class="logos cur-point">
                                 <a href="https://bettertogether.us/"><svg class="svg-logo" width="7" height="15"
                                         viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
