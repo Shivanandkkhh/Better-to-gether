@@ -1,1 +1,4 @@
-Hello this is the new file
+
+Hello this is the new file <This is the fist revert of commit using the command ==+ git revert head>
+
+
